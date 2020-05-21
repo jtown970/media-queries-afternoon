@@ -35,9 +35,11 @@ class App extends React.Component {
             <button className="ham-btn" onClick={this.toggleMobileMenu}>MENU</button>
           <ol 
           className={`mobile-nav-list ${this.state.isMobileMenuOpen ? 'mobile-nav-list-open' : null }`}>
-              <li className="mobile-nav-list-item">About</li>
-              <li className="mobile-nav-list-item">Home</li>
-              <li className="mobile-nav-list-item">Contact</li>
+              <li className="mobile-nav-list-item">SERVICES</li>
+              <li className="mobile-nav-list-item">PORTFOLIO</li>
+              <li className="mobile-nav-list-item">ABOUT</li>
+              <li className="mobile-nav-list-item">TEAM</li>
+              <li className="mobile-nav-list-item">CONTACT</li>
             </ol>
           </nav>
         </header>
@@ -47,7 +49,7 @@ class App extends React.Component {
             <h1 className="h1-text">IT'S NICE TO MEET YOU</h1>
             <button className="btn">TELL ME MORE</button>
           </div>
-          <img className="img" src="https://blackrockdigital.github.io/startbootstrap-agency/assets/img/header-bg.jpg"/>
+          <img className="img" src="https://blackrockdigital.github.io/startbootstrap-agency/assets/img/header-bg.jpg" alt="background of phone keys headphone"/>
         </div>
   
       </div>
