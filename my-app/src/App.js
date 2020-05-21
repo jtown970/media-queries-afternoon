@@ -51,6 +51,13 @@ class App extends React.Component {
           </div>
           <img className="img" src="https://blackrockdigital.github.io/startbootstrap-agency/assets/img/header-bg.jpg" alt="background of phone keys headphone"/>
         </div>
+        <div className="services-container">
+          <div className="services-container-text">
+            <p className="top-text">SERVICES</p>
+            <p className="filler-text">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+
   
       </div>
     );
