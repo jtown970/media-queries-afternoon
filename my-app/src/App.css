@@ -1,0 +1,167 @@
+@import './reset.css';
+
+* {
+  box-sizing: border-box;
+
+}
+
+.header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+}
+
+.logo {
+  height: 5vh;
+  width: 20vw;
+  z-index: 2;
+}
+
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items {
+  font-size: 1rem;
+  font-weight: 50;
+  margin-left: 10px;
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em
+}
+
+.nav-items:hover {
+  color: goldenrod;
+}
+
+.mobile-nav-list {
+  position: absolute;
+  right: 0vw;
+  top: -100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85vh;
+  width: 100vw;
+  overflow: hidden;
+  transition: all 1000ms;
+}
+
+.ham-btn{
+  height: 20px;
+  width: 60px;
+  background-color: goldenrod;
+  color: #fff;
+  position: absolute;
+  right: 16px;
+  top: 25%;
+  display: none;
+  z-index: 2;
+}
+
+
+
+.mobile-nav-list-open {
+  top: 0px;
+  z-index: 1;
+}
+
+.img{
+  width: 100vw;
+  height: 98vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 30%;
+  left: 10%;
+}
+
+.h1-text, .h2-text {
+  color: white;
+}
+
+.h1-text, .h2-text, .btn {
+  margin-bottom: 10%;
+}
+
+.h1-text{
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 4rem;
+}
+
+.h2-text {
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  height: 8vh;
+  width: 15vw;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background-color: darkgoldenrod;
+}
+
+
+@media (max-width: 500px){
+  .nav-list{
+    display: none;
+  }
+  .mobile-nav-list-item{
+    color: goldenrod;
+  }
+
+  .ham-btn{
+    display: inline-block;
+  }
+  .mobile-nav-list{
+    display: flex;
+  }
+  .header{
+    background-color: black;
+  }
+
+  .h1-text{
+    font-size: 2rem;
+  }
+  .h2-text{
+    font-size: 1.5rem;
+    left: 0%;
+  }
+
+  .btn{
+    height: 10vh;
+    width: 40vw;
+  }
+  
+}
+
+@media (min-width: 501px){
+  .header-text{
+    left: 25%;
+  }
+}
